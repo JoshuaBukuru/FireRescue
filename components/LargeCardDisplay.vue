@@ -2,6 +2,13 @@
   <div class="container">
     <h4 class="Header">{{ cardsSection.title }}</h4>
     <p class="snippet">{{ cardsSection.snippet }}</p>
+    <div class="cards-container">
+      <LargeCard
+        v-for="card in cardsSection.cards"
+        :key="card.id"
+        :card="card"
+      />
+    </div>
   </div>
 </template>
 

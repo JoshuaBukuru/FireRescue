@@ -10,14 +10,8 @@
 </template>
 
 <script>
-import Hero from '../components/Hero'
-import LargeCardDisplay from '../components/LargeCardDisplay'
 import { largeCardSections } from '@/assets/data.js'
 export default {
-  components: {
-    Hero,
-    LargeCardDisplay,
-  },
   data() {
     return {
       largeCardInfo: largeCardSections,
